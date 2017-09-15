@@ -50,7 +50,7 @@ function mergeObjs() {
 function processFile(filename, dirJSON) {
     // Hacky, hacky RegExp parsing right now; replace with something better
     var fileContents = fs.readFileSync(filename, "utf8");
-    var translatables = fileContents.match(/translate\s*\([^\),]*/);
+    var translatables = fileContents.match(/translate\s*\([^\),]*/g);
     if(translatables) {
         /* jshint loopfunc: true */
         for(var i = 0; i < translatables.length; i++) {
