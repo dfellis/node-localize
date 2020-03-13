@@ -13,7 +13,7 @@
   "version": "0.4.7",
   "main": "./lib/localize",
   "dependencies": {
-    "commander": "~2.1.0"
+    "commander": "~2.20.3"
   },
   "devDependencies": {
     "jshint": "~2.4.4",
